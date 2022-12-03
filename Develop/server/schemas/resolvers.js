@@ -50,7 +50,7 @@ const resolvers = {
         );
         return updatedUser;
       }
-      throw new AuthenticationError("You need to be logged in!");
+      throw new AuthenticationError("You must be logged in");
     },
 
     removeBook: async (parent, args, context) => {
@@ -62,7 +62,7 @@ const resolvers = {
         );
         return updatedUser;
       }
-      throw new AuthenticationError("You need to be logged in!");
+      throw new AuthenticationError("You must be logged in");
     },
   },
 };
